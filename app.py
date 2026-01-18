@@ -143,6 +143,14 @@ def doctor_anika():
 def doctor_arjun():
     return render_template("doctor_arjun.html") 
 
+@app.route("/doctor/nisha")
+def doctor_nisha():
+    return render_template("doctor_nisha.html") 
+
+@app.route("/doctor/vikram")
+def doctor_vikram():
+    return render_template("doctor_vikram.html") 
+
 
 @app.route("/about")
 def about():
