@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Us | HealthCare</title>
+    <title>Contact Us | CareSphere Hospitals</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: #2788d2ff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
 <!-- HEADER (same as other pages) -->
 <header class="navbar">
     <div class="nav-container">
-        <h2 class="logo">Next-Gen Hospital</h2>
+        <a class="logo" href="/" >CareSphere Hospitals</a>
         <nav>
             <a href="/">Home</a>
             <a href="/doctors">Doctors</a>
@@ -26,31 +34,31 @@
 <div class="page-bg">
     <div class="auth-box" style="max-width: 600px; text-align:left;">
 
-        <h2 style="text-align:center;">Contact Us</h2>
+        <h2 style="text-align:center;">Get in Touch</h2>
         <p class="auth-subtext" style="text-align:center;">
-            We’d love to hear from you
+            We’re here to support your healthcare needs
         </p>
 
         <form method="POST">
             <label>Full Name</label>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" placeholder="Enter your full name" required>
 
             <label>Email Address</label>
-            <input type="email" placeholder="Enter your email" required>
+            <input type="email" placeholder="Enter your email address" required>
 
             <label>Message</label>
-            <textarea rows="4" placeholder="Write your message here..." required></textarea>
+            <textarea rows="4" placeholder="Share your query or feedback with us..." required></textarea>
 
             <button type="submit" class="btn-primary full-width">
-                Send Message
+                Submit Message
             </button>
         </form>
 
         <br>
         <p>
-            📍 Address: Mumbai, India<br>
-            📞 Phone: +91 90000 00000<br>
-            ✉ Email: support@nextgenhospital.com
+            📍 Address: Visakhapatnam, Andhra Pradesh, India<br>
+            📞 Phone: +91 9494138821<br>
+            ✉ Email: madabattulayesaswi@gmail.com
         </p>
 
     </div>

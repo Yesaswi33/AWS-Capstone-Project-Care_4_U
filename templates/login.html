@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login | Next-Gen Hospital</title>
+    <title>Login | CareSphere Hospitals</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: #2788d2ff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="navbar">
     <div class="nav-container">
-        <h2 class="logo">Next-Gen Hospital</h2>
+        <a class="logo" >CareSphere Hospitals</a>
         <nav>
             <a href="/">Home</a>
             <a href="/doctors">Doctors</a>
@@ -30,8 +38,8 @@
             👤
         </div>
 
-        <h2>Welcome Back</h2>
-        <p class="auth-subtext">Sign in to your account</p>
+        <h2>Welcome Back!</h2>
+        <p class="auth-subtext">Sign in to access your appointments and profile</p>
 
         <form method="POST" action="/login">
 
@@ -43,22 +51,22 @@
 
             <div class="auth-row">
                 <label class="remember">
-                    <input type="checkbox"> Remember me
+                    <input type="checkbox"> Keep me signed in
                 </label>
-                <a href="#" class="link">Forgot password?</a>
+                <a href="#" class="link">Forgot your password?</a>
             </div>
 
             <button type="submit" class="btn-primary full-btn">
-                Sign In
+                Login
             </button>
         </form>
 
         <p class="switch-auth">
-            Don’t have an account?
-            <a href="/register">Register here</a>
+            New to CareSphere Hospitals? 
+            <a href="/register">Create an account</a>
         </p>
 
-        <div class="divider">Or continue with</div>
+        <div class="divider">Or login using</div>
 
         <div class="social-buttons">
             <button class="social google">Google</button>

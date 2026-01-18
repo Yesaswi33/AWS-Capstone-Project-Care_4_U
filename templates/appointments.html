@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Book Appointment | Next-Gen Hospital</title>
+    <title>Book Appointment | CareSphere Hospitals</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: #2788d2ff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="navbar">
     <div class="nav-container">
-        <h2 class="logo">Next-Gen Hospital</h2>
+        <a class="logo" href="/" >CareSphere Hospitals</a>
         <nav>
             <a href="/">Home</a>
             <a href="/doctors">Doctors</a>
@@ -82,9 +90,9 @@
                     <label>Preferred Doctor</label>
                     <select name="doctor">
                         <option>Any Available Doctor</option>
-                        <option>Dr. Sarah Johnson</option>
-                        <option>Dr. Michael Chen</option>
-                        <option>Dr. Emily Williams</option>
+                        <option>Dr. Aarav Mehta</option>
+                        <option>Dr. Ananya Rao</option>
+                        <option>Dr. Rohan Kapoor</option>
                     </select>
                 </div>
 

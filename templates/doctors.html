@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Doctors | Next-Gen Hospital</title>
+    <title>Doctors | CareSphere Hospitals</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: #2788d2ff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="navbar">
     <div class="nav-container">
-        <h2 class="logo">Next-Gen Hospital</h2>
+        <a class="logo" href="/">CareSphere Hospitals</a>
         <nav>
             <a href="/">Home</a>
             <a href="/doctors" class="active">Doctors</a>
@@ -49,51 +57,51 @@
 
     <!-- Doctor 1 -->
     <div class="doctor-card">
-        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300" alt="">
-        <h3>Dr. Sarah Johnson</h3>
-        <p class="specialty">Cardiologist</p>
+        <img src="https://media.istockphoto.com/id/179011088/photo/indian-doctor.jpg?s=612x612&w=0&k=20&c=EwRn1EWy79prCtdo8yHM6hvCVVcaKTznVBpVURPJxt4=" alt="">
+        <h3>Dr. Aarav Mehta</h3>
+        <p class="specialty">General Medicine</p>
 
         <p class="rating">⭐ 4.9 (128 reviews)</p>
 
-        <p class="info">15 years experience</p>
+        <p class="info">12 years experience</p>
         <p class="info">MD, Harvard Medical School</p>
 
         <div class="card-actions">
-            <a href="/doctor/sarah" class="btn-outline">View Profile</a>
+            <a href="/doctor/aarav" class="btn-outline">View Profile</a>
             <a href="/appointments" class="btn-primary">Book Now</a>
         </div>
     </div>
 
     <!-- Doctor 2 -->
     <div class="doctor-card">
-        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300" alt="">
-        <h3>Dr. Michael Chen</h3>
-        <p class="specialty">Neurologist</p>
+        <img src="https://i.pinimg.com/736x/c5/a3/90/c5a3904b38eb241dd03dd30889599dc4.jpg" alt="">
+        <h3>Dr. Ananya Rao</h3>
+        <p class="specialty">Cardiology</p>
 
         <p class="rating">⭐ 4.8 (96 reviews)</p>
 
-        <p class="info">12 years experience</p>
+        <p class="info">3 years experience</p>
         <p class="info">MD, Stanford University</p>
 
         <div class="card-actions">
-            <a href="/doctor/michael" class="btn-outline">View Profile</a>
+            <a href="/doctor/ananya" class="btn-outline">View Profile</a>
             <a href="/appointments" class="btn-primary">Book Now</a>
         </div>
     </div>
 
     <!-- Doctor 3 -->
     <div class="doctor-card">
-        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=300" alt="">
-        <h3>Dr. Emily Williams</h3>
-        <p class="specialty">Pediatrician</p>
+        <img src="https://thumbs.dreamstime.com/b/indian-male-doctor-smiling-front-hospital-young-physician-wearing-white-lab-coat-stethoscope-confidently-camera-406537320.jpg" alt="">
+        <h3>Dr. Rohan Kapoor</h3>
+        <p class="specialty">Neurology</p>
 
         <p class="rating">⭐ 4.9 (154 reviews)</p>
 
-        <p class="info">10 years experience</p>
+        <p class="info">6 years experience</p>
         <p class="info">MD, Yale School of Medicine</p>
 
         <div class="card-actions">
-            <a href="/doctor/emily" class="btn-outline">View Profile</a>
+            <a href="/doctor/rohan" class="btn-outline">View Profile</a>
             <a href="/appointments" class="btn-primary">Book Now</a>
         </div>
     </div>

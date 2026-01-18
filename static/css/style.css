@@ -45,7 +45,7 @@ h1 {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     color: #333;
 }
@@ -401,15 +401,16 @@ body {
 
 /* BUTTON */
 .btn-primary {
+    padding: 12px;
     width: 100%;
     margin-top: 20px;
-    padding: 12px;
     background: #0f766e;
     color: white;
     border: none;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
+    display: inline;
 }
 
 

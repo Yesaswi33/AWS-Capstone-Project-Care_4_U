@@ -2,40 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register | HealthCare</title>
+    <title>Register | CareSphere Hospitals</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: #2788d2ff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+<!-- HEADER -->
+<header class="navbar">
+    <div class="nav-container">
+        <a class="logo" href="/">CareSphere Hospitals</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/doctors">Doctors</a>
+            <a href="/appointments">Appointments</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/register">Register</a>
+        </nav>
+    </div>
+</header>
 
 <div class="page-bg">
     <div class="auth-box">
 
         <div class="auth-icon">👤</div>
 
-        <h2>Create Account</h2>
-        <p class="auth-subtext">Sign up to get started</p>
+        <h2>Create Your Account</h2>
+        <p class="auth-subtext">Join CareSphere Hospitals and manage your health online</p>
 
         <form method="POST">
             <label>Full Name</label>
-            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="text" name="name" placeholder="Enter your full name" required>
 
             <label>Email Address</label>
             <input type="email" name="email" placeholder="Enter your email" required>
 
             <label>Password</label>
-            <input type="password" name="password" placeholder="Create a password" required>
+            <input type="password" name="password" placeholder="Create a secure password" required>
 
             <label>Confirm Password</label>
-            <input type="password" name="confirm_password" placeholder="Confirm password" required>
+            <input type="password" name="confirm_password" placeholder="Re-enter your password" required>
 
             <button type="submit" class="btn-primary">
-                Register
+                Sign Up
             </button>
         </form>
 
         <p class="switch-auth">
-            Already have an account?
-            <a href="/login">Login here</a>
+            Already registered? 
+            <a href="/login">Sign in here</a>
         </p>
 
     </div>

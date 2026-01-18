@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 import uuid
 
 app = Flask(__name__)
-app.secret_key = "dev-secret-key"
+app.secret_key = "yesaswi_madabattula_care4u_secret_key"
 
 # Local in-memory storage
 users = {}
@@ -104,17 +104,17 @@ def doctors():
 #     return render_template("doctor_details.html")
 
 
-@app.route("/doctor/sarah")
-def doctor_sarah():
-    return render_template("doctor_sarah.html")
+@app.route("/doctor/rohan")
+def doctor_rohan():
+    return render_template("doctor_rohan.html")
 
-@app.route("/doctor/michael")
-def doctor_michael():
-    return render_template("doctor_michael.html")
+@app.route("/doctor/ananya")
+def doctor_ananya():
+    return render_template("doctor_ananya.html")
 
-@app.route("/doctor/emily")
-def doctor_emily():
-    return render_template("doctor_emily.html")
+@app.route("/doctor/aarav")
+def doctor_aarav():
+    return render_template("doctor_aarav.html")
 
 @app.route("/about")
 def about():
