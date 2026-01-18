@@ -1,0 +1,838 @@
+/* body {
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #5b0000;
+}
+ */
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #1e88e5;
+    margin: 0;
+}
+
+.nav-container nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-container nav a:hover {
+    color: #1e88e5;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #1e88e5, #43a047);
+    color: white;
+    padding: 80px 20px;
+}
+
+.hero-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* BUTTONS */
+
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* STATS */
+.stats {
+    background: #f5f5f5;
+    padding: 40px 20px;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.stat-box h2 {
+    color: #1e88e5;
+}
+
+/* SERVICES & DOCTORS */
+.services, .doctors {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-subtitle {
+    max-width: 600px;
+    margin: auto;
+    color: #666;
+}
+
+.service-grid, .doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.service-card, .doctor-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.doctor-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(135deg, #43a047, #1e88e5);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.large {
+    font-size: 18px;
+    padding: 16px 32px;
+}
+
+/* AUTH PAGES */
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e88e5, #43a047);
+}
+
+.auth-card {
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #1e88e5;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.full {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.auth-footer a {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: 500;
+}
+/* LOGIN / REGISTER PAGE BACKGROUND */
+.page-bg {
+    min-height: 100vh;
+    background: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* AUTH CARD */
+.auth-box {
+    background: #fff;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+/* ICON */
+.auth-icon {
+    width: 60px;
+    height: 60px;
+    background: #0f766e;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 auto 15px;
+}
+
+/* TEXT */
+.auth-subtext {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* FORM */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* REMEMBER + FORGOT */
+.auth-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.remember input {
+    margin-right: 5px;
+}
+
+.link {
+    color: #0f766e;
+    text-decoration: none;
+}
+
+/* BUTTON */
+.full-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* SWITCH */
+.switch-auth {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.switch-auth a {
+    color: #0f766e;
+    font-weight: 500;
+}
+
+/* DIVIDER */
+.divider {
+    margin: 20px 0;
+    font-size: 13px;
+    color: #888;
+}
+
+/* SOCIAL BUTTONS */
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+}
+
+.social.google {
+    border-color: #ea4335;
+}
+
+.social.facebook {
+    border-color: #1877f2;
+}
+/* ===== AUTH PAGE BASE ===== */
+
+
+/* ===== AUTH CARD ===== */
+.auth-box {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* ICON */
+.auth-icon {
+    width: 60px;
+    height: 60px;
+    background: #0f766e;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin: 0 auto 20px;
+}
+
+/* TEXT */
+.auth-subtext {
+    color: #666;
+    margin-bottom: 24px;
+}
+
+/* FORM */
+.auth-box label {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    margin: 14px 0 6px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.btn-primary {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #0f766e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+/* SWITCH LINK */
+.switch-auth {
+    margin-top: 20px;
+    font-size: 14px;
+}
+/* ===== APPOINTMENTS ===== */
+.appointment-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.appointment-card p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.btn-cancel {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-cancel:hover {
+    background: #b91c1c;
+}
+/* ===== DOCTORS PAGE ===== */
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.doctor-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.doctor-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+    margin: 8px 0;
+}
+
+.doctor-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+.appointment-box {
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    margin: auto;
+}
+
+.appointment-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+button.danger {
+    border-color: #e53935;
+    color: #e53935;
+}
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+.auth-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin: 15px 0;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.full-btn {
+    width: 100%;
+}
+/* ===== DOCTORS PAGE ===== */
+
+.page-header {
+    background: linear-gradient(135deg, #1e88e5, #43a047);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.search-bar {
+    max-width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.search-bar input,
+.search-bar select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.doctors-grid {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.doctor-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.doctor-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #e0f2f1;
+}
+
+.specialty {
+    color: #1e88e5;
+    font-weight: 600;
+}
+
+.rating {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.info {
+    font-size: 13px;
+    color: #555;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.card-actions a {
+    flex: 1;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 40px 0;
+}
+
+.pagination button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+}
+
+.pagination .active {
+    background: #1e88e5;
+    color: white;
+    border-color: #1e88e5;
+}
+/* ===== APPOINTMENTS PAGE ===== */
+
+.appointment-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.appointment-form-card {
+    max-width: 520px;
+    background: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.appointment-form-card h3 {
+    margin: 20px 0 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.appointment-form-card label {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.appointment-form-card input,
+.appointment-form-card select,
+.appointment-form-card textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.appointment-form-card textarea {
+    margin-top: 10px;
+    resize: none;
+    height: 90px;
+}
+
+.checkbox-group {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+/* ===== ADMIN DASHBOARD ===== */
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th {
+    text-align: left;
+    padding: 10px;
+    background: #f3f4f6;
+    font-size: 14px;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+/* ===========================
+   ADMIN DASHBOARD FULL WIDTH
+   =========================== */
+
+.admin-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Make hero full width */
+.admin-container .hero-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 40px 60px;
+}
+
+/* Make stats full width */
+.admin-container .stats-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 60px;
+}
+
+/* Grid layout for dashboard */
+.admin-grid {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 30px;
+    padding: 40px 60px;
+}
+
+/* Main + Sidebar */
+.admin-main,
+.admin-side {
+    width: 100%;
+}
+
+/* Tables full width */
+.admin-main table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-main th,
+.admin-main td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+/* ===========================
+   APPOINTMENT PAGE LAYOUT
+   =========================== */
+
+.page-header {
+    background: linear-gradient(135deg, #1e88e5, #43a047);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.appointment-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* Main layout: form + info cards */
+.appointment-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* Form card */
+.appointment-form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Form grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Info cards (right side) */
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+    .appointment-section {
+        grid-template-columns: 1fr;
+    }
+}

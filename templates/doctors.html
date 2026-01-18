@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctors | Next-Gen Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+    <div class="nav-container">
+        <h2 class="logo">Next-Gen Hospital</h2>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/doctors" class="active">Doctors</a>
+            <a href="/appointments">Appointments</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </nav>
+    </div>
+</header>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+    <h1>Our Doctors</h1>
+    <p>Meet our team of experienced healthcare professionals</p>
+</section>
+
+<!-- SEARCH BAR -->
+<section class="search-bar">
+    <input type="text" placeholder="Search doctors by name...">
+    <select>
+        <option>All Specialties</option>
+        <option>Cardiology</option>
+        <option>Neurology</option>
+        <option>Pediatrics</option>
+        <option>Orthopedics</option>
+        <option>Dermatology</option>
+        <option>General Medicine</option>
+    </select>
+    <button class="btn-primary">Search</button>
+</section>
+
+<!-- DOCTORS GRID -->
+<section class="doctors-grid">
+
+    <!-- Doctor 1 -->
+    <div class="doctor-card">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300" alt="">
+        <h3>Dr. Sarah Johnson</h3>
+        <p class="specialty">Cardiologist</p>
+
+        <p class="rating">⭐ 4.9 (128 reviews)</p>
+
+        <p class="info">15 years experience</p>
+        <p class="info">MD, Harvard Medical School</p>
+
+        <div class="card-actions">
+            <a href="/doctor/sarah" class="btn-outline">View Profile</a>
+            <a href="/appointments" class="btn-primary">Book Now</a>
+        </div>
+    </div>
+
+    <!-- Doctor 2 -->
+    <div class="doctor-card">
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300" alt="">
+        <h3>Dr. Michael Chen</h3>
+        <p class="specialty">Neurologist</p>
+
+        <p class="rating">⭐ 4.8 (96 reviews)</p>
+
+        <p class="info">12 years experience</p>
+        <p class="info">MD, Stanford University</p>
+
+        <div class="card-actions">
+            <a href="/doctor/michael" class="btn-outline">View Profile</a>
+            <a href="/appointments" class="btn-primary">Book Now</a>
+        </div>
+    </div>
+
+    <!-- Doctor 3 -->
+    <div class="doctor-card">
+        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=300" alt="">
+        <h3>Dr. Emily Williams</h3>
+        <p class="specialty">Pediatrician</p>
+
+        <p class="rating">⭐ 4.9 (154 reviews)</p>
+
+        <p class="info">10 years experience</p>
+        <p class="info">MD, Yale School of Medicine</p>
+
+        <div class="card-actions">
+            <a href="/doctor/emily" class="btn-outline">View Profile</a>
+            <a href="/appointments" class="btn-primary">Book Now</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- PAGINATION -->
+<div class="pagination">
+    <button>Previous</button>
+    <button class="active">1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>Next</button>
+</div>
+
+</body>
+</html>

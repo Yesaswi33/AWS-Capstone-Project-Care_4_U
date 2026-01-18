@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login | Next-Gen Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="page-bg">
+    <div class="auth-box">
+        <div class="auth-icon">🛡️</div>
+
+        <h2>Admin Login</h2>
+        <p class="auth-subtext">Access admin dashboard</p>
+
+        <form method="POST" action="/admin/login">
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Password</label>
+    <input type="password" name="password" required>
+
+    <button class="btn-primary full-width">Login</button>
+</form>
+
+    </div>
+</div>
+
+</body>
+</html>

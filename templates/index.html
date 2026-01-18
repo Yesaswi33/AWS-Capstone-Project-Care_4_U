@@ -1,0 +1,161 @@
+<!-- {% if logged_in %}
+    <p>You are logged in</p>
+
+    <a href="/appointments">Book Appointment</a><br><br>
+    <a href="/logout">Logout</a>
+{% else %}
+    <a href="/login">Login</a> |
+    <a href="/register">Register</a>
+{% endif %} -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Next-Gen Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header class="navbar">
+    <div class="nav-container">
+        <h2 class="logo">Next-Gen Hospital</h2>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/doctors">Doctors</a>
+            <a href="/appointments">Appointments</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Your Health Is Our Top Priority</h1>
+            <p>
+                We provide world-class healthcare services with compassionate care.
+                Our team of expert doctors and staff are committed to your well-being.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="/appointments" class="btn-primary">Book Appointment</a>
+                <a href="/doctors" class="btn-outline">Find a Doctor</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600"
+                alt="Healthcare professionals"
+            >
+        </div>
+    </div>
+</section>
+
+
+<!-- STATS SECTION -->
+<section class="stats">
+    <div class="stats-container">
+        <div class="stat-box">
+            <h2>150+</h2>
+            <p>Expert Doctors</p>
+        </div>
+        <div class="stat-box">
+            <h2>50K+</h2>
+            <p>Happy Patients</p>
+        </div>
+        <div class="stat-box">
+            <h2>30+</h2>
+            <p>Years Experience</p>
+        </div>
+        <div class="stat-box">
+            <h2>24/7</h2>
+            <p>Emergency Service</p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services">
+    <h2>Our Services</h2>
+    <p class="section-subtitle">
+        We offer a wide range of medical services to meet all your healthcare needs.
+    </p>
+
+    <div class="service-grid">
+        <div class="service-card">
+            <h3>Cardiology</h3>
+            <p>Expert heart care with advanced diagnostic and treatment options.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Emergency Care</h3>
+            <p>24/7 emergency services with rapid response medical team.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Laboratory</h3>
+            <p>State-of-the-art diagnostic laboratory services.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Pediatrics</h3>
+            <p>Specialized healthcare for infants, children, and adolescents.</p>
+        </div>
+    </div>
+</section>
+
+<!-- DOCTORS SECTION -->
+<section class="doctors">
+    <h2>Meet Our Doctors</h2>
+    <p class="section-subtitle">
+        Our experienced medical professionals are here to provide you with the best care.
+    </p>
+
+    <div class="doctor-grid">
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300" alt="Doctor">
+            <h3>Dr. Sarah Johnson</h3>
+            <p>Cardiologist</p>
+        </div>
+
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300" alt="Doctor">
+            <h3>Dr. Michael Chen</h3>
+            <p>Neurologist</p>
+        </div>
+
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=300" alt="Doctor">
+            <h3>Dr. Emily Williams</h3>
+            <p>Pediatrician</p>
+        </div>
+    </div>
+
+    <div class="center-btn">
+        <a href="/doctors" class="btn-primary">View All Doctors</a>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Need Medical Assistance?</h2>
+    <p>Book an appointment today and let our experts take care of your health.</p>
+    <a href="/appointments" class="btn-primary large">Schedule Appointment</a>
+</section>
+
+</body>
+
+
+</html>

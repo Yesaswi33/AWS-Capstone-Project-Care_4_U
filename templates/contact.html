@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | HealthCare</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- HEADER (same as other pages) -->
+<header class="navbar">
+    <div class="nav-container">
+        <h2 class="logo">Next-Gen Hospital</h2>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/doctors">Doctors</a>
+            <a href="/appointments">Appointments</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </nav>
+    </div>
+</header>
+
+<div class="page-bg">
+    <div class="auth-box" style="max-width: 600px; text-align:left;">
+
+        <h2 style="text-align:center;">Contact Us</h2>
+        <p class="auth-subtext" style="text-align:center;">
+            We’d love to hear from you
+        </p>
+
+        <form method="POST">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Message</label>
+            <textarea rows="4" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit" class="btn-primary full-width">
+                Send Message
+            </button>
+        </form>
+
+        <br>
+        <p>
+            📍 Address: Mumbai, India<br>
+            📞 Phone: +91 90000 00000<br>
+            ✉ Email: support@nextgenhospital.com
+        </p>
+
+    </div>
+</div>
+
+</body>
+</html>

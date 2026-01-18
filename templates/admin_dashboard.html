@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <!-- MAIN CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+
+    <!-- ===== ADMIN CONTAINER ===== -->
+    <div class="admin-container">
+
+      <!-- ===== HEADER / HERO ===== -->
+      <section class="hero">
+        <div class="hero-container">
+          <div>
+            <h1>Admin Dashboard</h1>
+            <p>Welcome back, Admin</p>
+          </div>
+          <a href="#" class="btn-primary">+ Add New Doctor</a>
+        </div>
+      </section>
+
+      <!-- ===== STATS ===== -->
+      <section class="stats">
+        <div class="stats-container">
+          <div class="stat-box">
+            <h2>2,847</h2>
+            <p>Total Patients</p>
+          </div>
+          <div class="stat-box">
+            <h2>48</h2>
+            <p>Appointments Today</p>
+          </div>
+          <div class="stat-box">
+            <h2>32</h2>
+            <p>Active Doctors</p>
+          </div>
+          <div class="stat-box">
+            <h2>$128,540</h2>
+            <p>Revenue (Month)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== MAIN GRID ===== -->
+      <div class="admin-grid">
+
+        <!-- ===== LEFT: APPOINTMENTS ===== -->
+        <div class="admin-main">
+          <div class="hospital-card">
+            <h3>Today's Appointments</h3>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Patient</th>
+                  <th>Doctor</th>
+                  <th>Time</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>John Smith</td>
+                  <td>Dr. Sarah Johnson</td>
+                  <td>09:00 AM</td>
+                  <td><span style="color: green;">Confirmed</span></td>
+                </tr>
+
+                <tr>
+                  <td>Maria Garcia</td>
+                  <td>Dr. Michael Chen</td>
+                  <td>09:30 AM</td>
+                  <td><span style="color: orange;">Pending</span></td>
+                </tr>
+
+                <tr>
+                  <td>Lisa Anderson</td>
+                  <td>Dr. James Wilson</td>
+                  <td>10:30 AM</td>
+                  <td><span style="color: red;">Cancelled</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ===== RIGHT: SIDEBAR ===== -->
+        <div class="admin-side">
+
+          <!-- Quick Actions -->
+          <div class="hospital-card">
+            <h3>Quick Actions</h3>
+            <ul class="quick-actions">
+              <li><a href="#">➕ Add New Doctor</a></li>
+              <li><a href="#">📅 Manage Appointments</a></li>
+              <li><a href="#">📊 View Reports</a></li>
+              <li><a href="#">⚙️ Settings</a></li>
+            </ul>
+          </div>
+
+          <!-- Recent Patients -->
+          <div class="hospital-card">
+            <h3>Recent Patients</h3>
+            <p><strong>Emma Thompson</strong><br><small>Jan 15, 2025</small></p>
+            <p><strong>James Miller</strong><br><small>Jan 14, 2025</small></p>
+            <p><strong>Sophia Davis</strong><br><small>Jan 14, 2025</small></p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

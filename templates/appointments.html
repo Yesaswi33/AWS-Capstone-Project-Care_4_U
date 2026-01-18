@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment | Next-Gen Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+    <div class="nav-container">
+        <h2 class="logo">Next-Gen Hospital</h2>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/doctors">Doctors</a>
+            <a href="/appointments" class="active">Appointments</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </nav>
+    </div>
+</header>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+    <h1>Book an Appointment</h1>
+    <p>Schedule your visit with our expert doctors</p>
+</section>
+
+<!-- FORM SECTION -->
+<section class="appointment-section">
+
+    <div class="appointment-form-card">
+
+        <form method="POST" action="/appointments">
+
+            <!-- Personal Information -->
+            <h3>Personal Information</h3>
+
+            <div class="form-grid">
+                <div>
+                    <label>Full Name</label>
+                    <input type="text" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div>
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div>
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" placeholder="Enter your phone" required>
+                </div>
+
+                <div>
+                    <label>Date of Birth</label>
+                    <input type="date" name="dob" required>
+                </div>
+            </div>
+
+            <!-- Appointment Details -->
+            <h3>Appointment Details</h3>
+
+            <div class="form-grid">
+                <div>
+                    <label>Department</label>
+                    <select name="department" required>
+                        <option value="">Select Department</option>
+                        <option>General Medicine</option>
+                        <option>Cardiology</option>
+                        <option>Neurology</option>
+                        <option>Pediatrics</option>
+                        <option>Orthopedics</option>
+                        <option>Dermatology</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Preferred Doctor</label>
+                    <select name="doctor">
+                        <option>Any Available Doctor</option>
+                        <option>Dr. Sarah Johnson</option>
+                        <option>Dr. Michael Chen</option>
+                        <option>Dr. Emily Williams</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Preferred Date</label>
+                    <input type="date" name="date" required>
+                </div>
+
+                <div>
+                    <label>Preferred Time</label>
+                    <select name="time" required>
+                        <option>Select Time Slot</option>
+                        <option>09:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>11:00 AM</option>
+                        <option>02:00 PM</option>
+                        <option>03:00 PM</option>
+                        <option>04:00 PM</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Reason -->
+            <label>Reason for Visit</label>
+            <textarea name="reason" placeholder="Please describe your symptoms or reason for the appointment..."></textarea>
+
+            <!-- Options -->
+            <div class="checkbox-group">
+                <label><input type="checkbox"> This is my first visit</label>
+                <label><input type="checkbox"> I have health insurance</label>
+            </div>
+
+            <button type="submit" class="btn-primary full">
+                Book Appointment
+            </button>
+
+        </form>
+
+        {% if appointments %}
+<hr style="margin:50px 0">
+
+<h3>Your Appointments</h3>
+
+{% for a in appointments %}
+<div class="appointment-card">
+    <p><strong>Name:</strong> {{ a.name }}</p>
+    <p><strong>Doctor:</strong> {{ a.doctor }}</p>
+    <p><strong>Date:</strong> {{ a.date }}</p>
+    <p><strong>Time:</strong> {{ a.time }}</p>
+</div>
+{% endfor %}
+{% endif %}
+
+
+    </div>
+
+    <!-- INFO CARDS -->
+    <div class="info-cards">
+
+        <div class="info-card">
+            <h4>Quick Booking</h4>
+            <p>Book in under 2 minutes</p>
+        </div>
+
+        <div class="info-card">
+            <h4>Confirmation</h4>
+            <p>Instant email confirmation</p>
+        </div>
+
+        <div class="info-card">
+            <h4>Reminders</h4>
+            <p>SMS & email reminders</p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
