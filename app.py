@@ -99,11 +99,6 @@ def doctors():
     return render_template("doctors.html")
 
 
-# @app.route("/doctor")
-# def doctor_details():
-#     return render_template("doctor_details.html")
-
-
 @app.route("/doctor/rohan")
 def doctor_rohan():
     return render_template("doctor_rohan.html")

@@ -401,6 +401,7 @@ body {
 
 /* BUTTON */
 .btn-primary {
+    text-decoration: none;
     padding: 12px;
     width: 100%;
     margin-top: 20px;
