@@ -134,6 +134,16 @@ def doctor_meera():
 def doctor_sameer():
     return render_template("doctor_sameer.html")
 
+
+@app.route("/doctor/anika")
+def doctor_anika():
+    return render_template("doctor_anika.html") 
+
+@app.route("/doctor/arjun")
+def doctor_arjun():
+    return render_template("doctor_arjun.html") 
+
+
 @app.route("/about")
 def about():
     return render_template("about.html")
