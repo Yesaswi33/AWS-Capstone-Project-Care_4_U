@@ -111,6 +111,29 @@ def doctor_ananya():
 def doctor_aarav():
     return render_template("doctor_aarav.html")
 
+@app.route("/doctor/priya")
+def doctor_priya():
+    return render_template("doctor_priya.html")
+
+
+@app.route("/doctor/aarohi")
+def doctor_aarohi():
+    return render_template("doctor_aarohi.html")
+
+
+@app.route("/doctor/kabir")
+def doctor_kabir():
+    return render_template("doctor_kabir.html")
+
+
+@app.route("/doctor/meera")
+def doctor_meera():
+    return render_template("doctor_meera.html")
+
+@app.route("/doctor/sameer")
+def doctor_sameer():
+    return render_template("doctor_sameer.html")
+
 @app.route("/about")
 def about():
     return render_template("about.html")
